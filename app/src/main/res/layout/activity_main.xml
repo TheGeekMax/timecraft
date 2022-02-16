@@ -24,6 +24,8 @@
         android:id="@+id/reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/Secondary"
+        android:textColor="@color/Sfont"
         android:text="Reset"
         android:layout_margin="5px"/>
 </LinearLayout>
