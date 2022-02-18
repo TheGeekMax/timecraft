@@ -28,4 +28,9 @@
         android:textColor="@color/Sfont"
         android:text="Reset"
         android:layout_margin="5px"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/farm_data"/>
 </LinearLayout>
