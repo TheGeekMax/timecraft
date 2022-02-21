@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //definition du Recycler view
-        fData = (new FileData("nolife.txt")).getDatas();
+        fData = (new FileData("info.json", getApplicationContext())).getDatas();
 
         adapter = new ItemAdapter(fData);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
@@ -74,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 aff.postDelayed(this,100);
             }
         },0);
+
+
     }
 
     public long getCurTimeStamp() {
